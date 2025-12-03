@@ -68,40 +68,8 @@ End-to-end pipeline:
 ---
 
 #  Architecture
+<img width="1875" height="2250" alt="image" src="https://github.com/user-attachments/assets/2b35025d-d2f1-48ad-87b5-344869ee293b" />
 
-        ┌─────────────────────────────┐
-        │        Raw MIMIC-IV         │
-        │ Vitals | Labs | Notes | ICD │
-        └─────────────────────────────┘
-                      │
-                      ▼
- ┌────────────────────────────────────────┐
- │     Preprocessing & Feature Fusion     │
- │  (HR/SBP/RR/Temp/SpO2 + Labs + Demo)   │
- └────────────────────────────────────────┘
-                      │
-                      ▼
- ┌────────────────────────────────────────┐
- │       Fuzzy Logic Risk Scoring         │
- │ (Soft abnormality: high HR, low SBP…)  │
- └────────────────────────────────────────┘
-                      │
-                      ▼
- ┌────────────────────────────────────────┐
- │     Genetic Algorithm Optimization     │
- │ (Tune HR/SBP fuzzy thresholds)         │
- └────────────────────────────────────────┘
-                      │
-                      ▼
- ┌────────────────────────────────────────┐
- │        LLM Agentic Reasoning           │
- │  “Explain risk + suggest next action”  │
- └────────────────────────────────────────┘
-                      │
-                      ▼
- ┌────────────────────────────────────────┐
- │      Early Sepsis Risk Prediction      │
- └────────────────────────────────────────┘
 
 ---
 
